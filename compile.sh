@@ -1,0 +1,1 @@
+javac @sources -d ./bin
