@@ -1,7 +1,8 @@
 import term.Terminal;
 import java.awt.Color;
+import javax.swing.SwingWorker;
 
-public class Example {
+public class Example extends SwingWorker<Integer, Void> {
 
 	private Terminal jterm;
 
@@ -9,21 +10,36 @@ public class Example {
 
 		jterm = new Terminal("test",120,40);
 		jterm.setVisible(true);
-		
-		for(int x = 0; x < 120; x++){
+		execute();
+	}
 
-			for(int y = 0; y < 40; y++){
+	@Override
+	public Integer doInBackground(){
 
-				jterm.setColor(false,x,y,Color.green);
-				jterm.setColor(true,x,y,new Color(0.03f,0.03f,0.03f));
+		int i = 0;
+
+		while(!Terminal.k_0){
+
+			try{
+				Thread.sleep(15);
+			}catch(InterruptedException e){
+
+
 
 			}
+			i++;
+			System.out.println("tick " + i);
 
 		}
 
-		jterm.printStringAt("This is a test.",0,0);
-	
-		jterm.clear();	
+		return 0;
+
+	}
+
+	@Override
+	public void done(){
+
+		System.exit(0);
 
 	}
 
