@@ -1,2 +1,3 @@
 ./src/Example.java
-./src/term/Terminal.java
+./src/term/JTermPanel.java
+./src/term/JTerminal.java
