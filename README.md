@@ -1,7 +1,11 @@
 # JTerm
 A simple terminal written in java.
+Only Swing/AWT libs used.
 
 ![Demo](https://raw.githubusercontent.com/Darthkpo/JTerm/master/doc/img0.png)
+
+![Running at 60 fps](https://raw.githubusercontent.com/Darthkpo/JTerm/master/doc/img1.gif)
+In this gif you can see the terminal updating all its chars at 60 fps with no flickering (Remember this is a low quality gif and its compressed).
 
 Here is an example:
 
