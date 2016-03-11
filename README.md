@@ -1,7 +1,7 @@
 # JTerm
 A simple terminal written in java.
 
-![Demo](https://raw.githubusercontent.com/Darthkpo/JTerm/master/img.png)
+![Demo](https://raw.githubusercontent.com/Darthkpo/JTerm/master/doc/img0.png)
 
 Here is an example:
 
